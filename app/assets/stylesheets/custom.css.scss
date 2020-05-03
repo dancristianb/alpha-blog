@@ -2,5 +2,30 @@
 @import "bootstrap";
 
 .navbar {
-  background-color: #b7dca0 !important;
+  background-color: black !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+#logo {
+  color: white;
+  font-size: 1.7em;
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#home-container {
+  margin-top: 25px;
+}
+
+.jumbotron {
+  background: asset_url('matthias-wagner-unsplash');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
 }
