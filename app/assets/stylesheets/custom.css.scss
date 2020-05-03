@@ -1,0 +1,6 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+.navbar {
+  background-color: #b7dca0 !important;
+}
