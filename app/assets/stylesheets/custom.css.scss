@@ -5,6 +5,11 @@
   background-color: black !important;
 }
 
+body {
+  height: 100%;
+  background-color: lightgrey;
+}
+
 .nav-link {
   color: white !important;
 }
@@ -31,5 +36,5 @@
 }
 
 .page-content {
-  background-color: lightgrey;
+  //background-color: lightgrey;
 }
