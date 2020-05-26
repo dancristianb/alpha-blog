@@ -7,7 +7,7 @@
     <div class="col-8 mt-4">
       <div class="card text-center">
         <div class="card-header">
-          <em>by dan</em>
+          <em>by <%= @article.user.username %></em>
         </div>
         <div class="card-body">
           <div class="card-text text-left"><%= simple_format(@article.description) %></div>
