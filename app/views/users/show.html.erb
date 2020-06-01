@@ -6,7 +6,10 @@
 </div>
 
 <h3 class="text-center mt-4"><%= @user.username %>'s articles</h3>
+<div class="flickr_pagination">
+  <%= will_paginate @articles, :container => false %>
+</div>
 <div class="container">
-  <%= render @user.articles %>
+  <%= render @articles %>
 </div>
 
