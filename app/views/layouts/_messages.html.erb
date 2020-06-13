@@ -1,14 +1,15 @@
 <% if flash.present? %>
   <div class="container">
-    <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
-      <ul>
-        <% flash.each do |_name, message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
+    <% flash.each do |name, message| %>
+      <div
+        class="alert alert-dismissible fade show mt-4 <%= alert_type(name) %> "
+        role="alert"
+      >
+        <%= message %>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    <% end %>
     </div>
   </div>
 <% end %>
