@@ -9,6 +9,13 @@
         <div class="card-header">
           by <%= @article.user.username %>
           <%= link_to gravatar_for(@article.user), @article.user %>
+          <% if @article.categories.present? %>
+            <div class="mt-2">
+              <% @article.categories.each do |category| %>
+                <%= render 'categories/category_badge', { category: category } %>
+              <% end %>
+            </div>
+          <% end %>
         </div>
         <div class="card-body">
           <div class="card-text text-left"><%= simple_format(@article.description) %></div>
